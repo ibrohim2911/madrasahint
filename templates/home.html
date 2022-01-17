@@ -1,0 +1,54 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="a">
+            <a class="btn" href="{%url 'register'%}">kursga yozilish</a>
+        </div>
+        <div >
+            <img class="logo" src="{%static 'images/Безымянный-2 (2).png'%}" alt=""><h1>Madrasah <br>
+            International <br>
+            School</h1>
+        </div>
+        
+            
+            <img class="stev" src="{% static 'images/Слой 1.png' %}" alt="">
+    </header>
+    <main>
+        <div  class="cent-im">
+            <h2>galeleriya</h2>
+            <div class="images">
+                <img class="img" src="{% static 'images/Слой 4.jpg' %}" alt="">
+                <img class="ml20 img" src="{% static 'images/Слой 2.jpg' %}" alt="">
+                <div class="along">
+                    <img class="along" src="{% static 'images/Слой 3.png' %}" alt="">
+                </div>
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        
+    </main>
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px;" class="s">
+        <div  class="info">
+                    <h3>bog'lanish</h3>
+
+                    <p>manzil................. <br>
+                    moljal.................</p>
+                    <p>tel raqam: 999999999</p>
+                    </div>
+    </div>
+    
+</body>
+</html>

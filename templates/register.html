@@ -1,0 +1,63 @@
+ {% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/styl.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post"> {% csrf_token %} 
+          <h3>salom kursga yozilishga marhamat</h3>
+         
+            <label class="name_label" for="id_name">Ism:</label>
+            <input placeholder="Ism:"  class="name_int" type="text" name="name" maxlength="70" required id="id_name">
+          
+            <label class="surname_label" for="id_surname">Familiya:</label>
+            <input placeholder="Familiya:" class="surname_int" type="text" name="surname" maxlength="70" required id="id_surname">
+          
+            <label class="age_label" for="id_age">Yosh:</label>
+            <input placeholder="Yosh:" class="age_int" type="text" name="age" maxlength="2" required id="id_age">
+        
+            <label class="number_label" for="id_number">Tel raqam:</label>
+            <input placeholder="raqam:" class="number_int" type="text" name="number" maxlength="13" required id="id_number">
+        
+            <label class="daraja_label" for="id_daraja">Daraja:</label>
+            <select name="daraja" id="id_daraja">
+          <option value="beginner" selected="">baginner</option>
+        
+          <option value="elemantry">elemantry</option>
+        
+          <option value="pre">pre-intermediate</option>
+        
+          <option value="inter">intermediate</option>
+        
+          <option value="upper">upper-intermediate</option>
+        </select><br>
+        <label class="vaqt_label" for="id_vaqt">dars vaqti:</label>
+            <select name="vaqt" id="id_vaqt">
+          <option value="farqi yo`q" >farqi yo`q</option>
+        
+          <option selected="" value="8:00">8:00</option>
+        
+          <option value="9:00">9:00</option>
+        
+          <option value="10:00">10:00</option>
+        
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:00">17:00</option>
+        </select>
+          </p> 
+          
+        
+        <button type="submit">utish</button>
+    </form>
+</body>
+</html>
