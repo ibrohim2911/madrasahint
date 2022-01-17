@@ -1,1 +1,1 @@
-web: gunicorn madrasah.wsgi --log-file-
+web: gunicorn madrasah.wsgi --log-file -
