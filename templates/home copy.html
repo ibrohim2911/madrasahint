@@ -1,0 +1,93 @@
+<!-- {% load static %}  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../staticfiles/css/styl.css">
+    <title>Madrasah International School</title>
+</head>
+
+<body>
+    <header style="padding:0!important;">
+        <div class="a">
+            <a class="btn" href="{%url 'register'%}">kursga yozilish</a>
+        </div>
+        <div>
+            <img class="logo" src="../static/images/Безымянный-2 (2).png" alt="">
+            <h1>Madrasah <br>
+                International <br>
+                School</h1>
+        </div>
+
+
+        <img class="stev" src="../static/images/Слой 1.png" alt="">
+    </header>
+    <main>
+        <div class="cent-im" >
+            <h2>galeleriya</h2>
+            <div class="images" style="display: flex; flex-direction: column; align-items: center;" >
+                <div class="img1">
+                    <img class="img" src="../static/images/Слой 4.jpg" alt="">
+                <img class="ml20 img" src="../static/images/Слой 2.jpg" alt="">
+                </div>
+                
+                <div class="others" style="margin-top: 20px; display: flex;flex-direction: column; align-items: center;">
+                    <a href="{%url 'register'%}"
+                        style="text-decoration: none; text-align: center; border: none; padding: 8px; background-color: rgb(255, 192, 69);color: #3d2514;font-size: 24px;">Ro'yhatdan
+                        otish </a>
+                    <h5 style="font-size: 28px; color: #3d2514;">Choose & Enjoy</h5>
+                    <p style="color: #3d2514;">Madrasah international school faqatgina ingiliz tili uchun mo'ljallangan o'quv markazi. Bu yerda
+                        har bir o'qituvchi ieltsdan kamida 6.5 olgan</p>
+                </div>
+                <div class="along" style="text-decoration: center;">
+                    <img class="along" src="../static/images/Слой 3.png" alt="">
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </main>
+    <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px;" class="s">
+        <div class="info">
+            <h3>bog'lanish</h3>
+
+            <p>manzil: Jizzax shahar<br>
+                mo'ljal:toshkent market yoni</p>
+            <p>tel raqam: +99891 590 96 00</p>
+        </div>
+    </div>
+    <style>
+        @media (max-width:605px) {
+            .logo {
+                width: 70px;
+            }
+
+            .stev {
+                display: block;
+                width: 170px;
+                height: 230px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-family: 'Alfa Slab One', cursive;
+                font-size: 25px;
+                color: #3d2514;
+
+            }
+        }
+    </style>
+</body>
+
+</html>
